@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imbue:opsz,wght@10..100,300;10..100,400;10..100,500&display=swap');
+@font-face {
+    font-family: "edition";
+    src: url(fonts\EDITION_.TTF);
+}
+/* Transition Keyframes */
+@-webkit-keyframes slideInLeft {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+@keyframes slideInLeft {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+body {
+    margin: 0;
+    font-family: "EB Garamond", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+/*background-image*/
+body {
+    background:url("../images/bg.png");
+    background-repeat: repeat;
+    background-size: 200px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background:url("../images/bg-dark.png");
+    background-repeat: repeat;
+    background-size: 200px;
+}
+
+.dark-mode-toggle {
+    animation: 2s ease-out 0s 0 slideInLeft;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.dark-mode-toggle label {
+    animation: 2s fadeIn 1;
+    color: #ffffff;
+}
+
+.dark-mode-toggle input {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+}
+
+.dark-mode-toggle input:checked + label::before {
+    content: '🌙';
+}
+
+.dark-mode .header-title,
+.dark-mode .header-subtitle,
+.dark-mode .header-translation,
+.dark-mode .frontpage {
+    color: #c0bba9;
+}
+
+.dark-mode hr {
+    background-color: rgb(255, 189, 48);
+}
+header {
+    animation: 1.0s ease-out 0s 1 slideInLeft;
+    display: inline-block;
+    margin: auto;
+    /*position: absolute;*/
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.header .header-translation {
+    font-size: calc(10pt + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    font-style: italic;
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+
+.header .header-content .header-subtitle {
+    animation: 1.2s ease-out 0s 1 slideInLeft;
+    font-size: calc(12pt + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    line-height: 0.6em;
+  }
+
+hr {
+    border: none;
+    background-color: rgb(247, 189, 175);
+    float: left;
+    height: 1px;
+    width: 50%;
+    vertical-align:top;
+    margin-top: -5px;
+}
+
+h1 {
+    line-height:0.9;
+    font-style: italic;
+    color: #9a9688;
+}
+.frontpage {
+    font-family: "edition";
+    font-weight: 500;
+    font-size: calc(80pt + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    text-transform: uppercase;
+}
+
+.sinulatan__image {
+    animation: 1.2s ease 0s 1 slideInLeft;
+    vertical-align:top;
+    object-position: -10px -20px;
+    width: calc(100% + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    max-width: 800px;
+    height: auto;
+}
+
+/* sections */
+.dark-mode section {
+    color: #c0bba9;
+}
+
+section {
+    animation: 1.0s ease-out 0s 1 slideInLeft;
+    display: block;
+}
+
+.section {
+    margin-bottom: 50px;
+    padding: 150px 50px;
+  }
+  
+  .section .section-title {
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+  }
+  
+  .section .section-subtitle {
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+  }
+  
+  .section-sm {
+    padding: 40px 0 !important;
+  }
+  
+  .section-md {
+    padding: 60px 0 !important;
+  }
+  
+  .section-lg {
+    padding: 100px 0 !important;
+  }
