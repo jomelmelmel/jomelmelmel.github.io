@@ -1,0 +1,1 @@
+kung mag-import ka og html nga gusto na makita sa maong website, paki-rename lang isip "index.html", or else di basahon so 404 ang mugawas. happy editing?!

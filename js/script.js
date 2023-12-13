@@ -19,8 +19,22 @@ $(document).ready(function(){
     });
 });
 
-// navbar toggle
-$('#nav-toggle').click(function(){
-    $(this).toggleClass('is-active')
-    $('ul.nav').toggleClass('show');
+//-----------------------------------
+
+// Navbar Modal
+document.getElementById('open-modal-btn').addEventListener('click', function() {
+  document.getElementById('myModal').style.display = 'block';
 });
+
+document.getElementById('close-modal-btn').addEventListener('click', function() {
+  document.getElementById('myModal').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+  var modal = document.getElementById('myModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+//----------------------------------

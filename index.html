@@ -7,50 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="Author" content="Jomel Rañeses Argoncillo">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <!--link rel="stylesheet" type="text/css" href="css/navbar.css"-->
     <title>Jomel Argoncillo.</title>
 </head>
 
 
 <body data-spy="scroll" data-target=".navbar">
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#blog">Blog</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-                <li class="item ml-md-3">
-                    <a href="components.html" class="btn btn-primary">Components</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>
+    <button id="open-modal-btn">☰</button>
+
+    <!-- Modal structure -->
+    <nav id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-modal-btn">&times;</span>
+        <!-- Navigation links go here -->
+        <ul class="navigation">
+          <li class="item"><a class="link" href="#home">Home</a></li>
+          <li class="item"><a class="link" href="#about">About</a></li>
+          <li class="item"><a class="link" href="#portfolio">Portfolio</a></li>
+          <li class="item"><a class="link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="dark-mode-toggle">
-            <label id="dmButton" for="dark-mode-checkbox" onclick="changeText()">🌙</label>
+            <label id="dmButton" for="dark-mode-checkbox" onclick="changeText()" style="font-size: 24px;">🌙</label>
             <input type="checkbox" id="dark-mode-checkbox"> 
         </div> 
         <div class="header-content container">
@@ -59,7 +43,7 @@
                 <img src="images/sinulatan.png" alt="Jomel Argoncillo." class="sinulatan__image">
             </h1>
             <p class="header-translation">TRANSLATION FROM CEBUANO:<br> 
-                Thanks for stopping by. I am Jomel Argoncillo.
+                Thanks for stopping by.  I am Jomel Argoncillo.
             </p>
             <hr>
             <br>
@@ -70,38 +54,44 @@
 
     <!-- about section -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/man.png" class="about-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="images/profile_photo.jpg" class="about-img inner-frame  frame"
+                        alt="ang nawong ni Jomel">
                 </div>
                 <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut
-                        fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam
-                        impedit iure nemo a iste
-                        <br>culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo
-                        esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis
-                        culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum
-                        expedita aliquid! Debitis, nam!
-                    </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <p class="section-subtitle" style="font-style: italic;">Kinsa gani ko ??</p>
+                    <h2 class="section-title">About Me</h2>
+                    <pre class="section-subtitle">
+What's up mga mananap! Hello there!
+
+I'm Jomel Rañeses Argoncillo, your friendly neighbourhood future engineer, your soon-to-be favourite tech whisperer with a dash of design wizardry (ginasalikway lang sa una, pero di na ngayownnnn). They say I have my head in the clouds, but little do they know it's because I'm both overthinking and dreaming up the next big thing simultaneously.
+
+Fueled by a mix of curiosity and an insatiable appetite for problem-solving and sleep-deprived inspiration (and maybe a few cups of coffee), I'm navigating the winding road to engineer stardom. Picture me as a fearless explorer plunging headfirst into the intricate realm of computer engineering, armed with nothing but a keyboard, a broken phone, and a dream. 
+
+But who is Jomel beyond the realms of engineering and design? This guy navigates the labyrinth of creativity with a sly smirk, embracing the shadows as allies in the pursuit of excellence. 
+
+They say genius is an infinite capacity for taking pains, but I say it's the "kalimtanon" mindset. I embrace the forgetful side of life, turning memory lapses into opportunities for innovation. I am very bad at remembering names. Why remember when you can forget? My creations are so unforgettable that they'll leave you wondering if you ever saw them in the first place.
+
+But wait, there's more! I'm not just about lines of codes, circuitry and algorithms. I'm a UI/UX connoisseur and orchestrator, who creates digital experiences that are smoother than a freshly buttered slide. Graphic design? Video editing? That's my canvas for creating visual symphonies that resonate with the soul. If aesthetics were a sport, I'd be the undisputed champion, winning gold medals in the Art Olympics. At least in the year 1988. Wa pa gani ko natawo ana!
+
+So, here you are, a curious traveller, as we venture into the mysterious, enchanting world of ✨Jomelmelmel✨. Buckle up, for the journey ahead is illuminated by the glow of innovation, guided by the unusual plot twists and broken humour that fuels the engine of creativity.
+
+Anga eyyyy!
+                    </pre>
                 </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
+            </div>
+        </div>
     </section>
 
 
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
+            <p class="section-subtitle" style="font-style: italic;">Unsa diay akong nabuhat sa tibuok kinabuhi?</p>
+            <h2 class="section-title">Portfolio</h2>
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
@@ -144,8 +134,35 @@
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
 
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">unsaon nako pag-reach out sa imo ug unsaon nimo pagpakigsulti??</p>
+            <h2 class="section-title">Contact Me</h2>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
 </body>
 
+<!-- jQuery core bundle --> <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
 <!-- bootstrap 3 bundle --> <script src="vendor/bootstrap/bootstrap.bundle.js"></script>
 <!-- bootstrap 3 affix --> <script src="vendor/bootstrap/bootstrap.affix.js"></script>
 <!--Dark Mode Feature--> <script src="js/darkmode.js"></script>
