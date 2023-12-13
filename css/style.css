@@ -109,7 +109,7 @@ header {
     animation: 2.5s ease-out 0s 1 slideInLeft;
     display: inline-block;
     margin: auto;
-    padding: 25px 50px;
+    padding: 25px 50px 400px;
     justify-content: center;
     align-items: center;
     display: block;
@@ -141,7 +141,7 @@ hr {
     background-color: rgb(247, 189, 175);
     float: left;
     height: 1px;
-    width: 50%;
+    width: 70%;
     vertical-align:top;
     margin-top: -5px;
 }
@@ -165,66 +165,3 @@ h1 {
     max-width: 640px;
     height: auto;
 }
-
-/* sections */
-.dark-mode section {
-    color: #c0bba9;
-}
-
-section {
-    animation: 3.0s ease-out 0s 1 slideInLeft;
-    display: block;
-    font-family: "Hanken Grotesk", sans-serif;
-}
-
-.section {
-    margin: 300px 50px;
-    padding: 150px 50px;
-  }
-  
-  .section .section-title {
-    font-size: calc(80px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
-    font-family: "edition";
-    font-weight: 500;
-    line-height: 0%;
-  }
-  
-  .section .section-subtitle {
-    white-space: pre-wrap;
-    text-align: justify;
-    font-family: "Hanken Grotesk", sans-serif;
-    margin-bottom: 6px;
-    font-weight: 400;
-    opacity: .9;
-  }
-  
-  .section-sm {
-    padding: 40px 0 !important;
-  }
-  
-  .section-md {
-    padding: 60px 0 !important;
-  }
-  
-  .section-lg {
-    padding: 100px 0 !important;
-  }
-
-  .about-img {
-    animation: 2.0s ease-out 0s 1 fadeIn;
-  }
-
-  .inner-frame {
-    border-top: 25px solid rgba(192, 195, 196,1);
-    border-left: 25px solid rgba(201, 204, 205,1);
-    border-right: 25px solid rgba(218, 221, 222,1);
-    border-bottom: 25px solid rgba(224, 228, 229,1);
-    box-shadow: -1px -1px 1px rgba(0,0,0,.6),
-      1px 1px 1px rgba(255,255,255,1);
-  }
-  .frame {
-    max-width: 400px;
-    margin: 20px auto;
-    box-shadow: 10px 10px 50px rgba(0,0,0,.5), -1px -1px 2px rgba(255,255,255,1);
-  }
