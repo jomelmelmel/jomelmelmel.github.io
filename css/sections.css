@@ -1,8 +1,9 @@
 /* sections */
+@media (prefers-color-scheme: dark) {
 .dark-mode section {
     color: #c0bba9;
 }
-
+}
 section {
     animation: 3.0s ease-out 0s 1 slideInLeft;
     display: block;
@@ -10,7 +11,7 @@ section {
 }
 
 .section {
-    margin: 100px 50px;
+    margin: 100px 0px;
     padding: 150px 50px;
   }
   
@@ -84,7 +85,7 @@ section {
     margin-bottom: 15px;
   }
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 800px) {
     .about {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
