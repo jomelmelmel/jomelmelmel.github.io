@@ -125,7 +125,7 @@ header {
 .header .header-translation {
     animation: 3s ease 0s 1 slideInLeft;
     font-size: calc(10pt + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
-    letter-spacing: calc(0px + (7 - 1) * ((100vw - 500px) / (1800 - 300)));
+    letter-spacing: calc(0px + (7 - 1) * ((100vw - 500px) / (2500 - 300)));
     font-style: italic;
     opacity: .8;
     margin-top: -10px;
@@ -135,12 +135,13 @@ header {
 
 .header .header-content .header-subtitle {
     animation: 3.5s ease-out 0s 1 slideInLeft;
-    font-size: calc(12pt + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    font-size: calc(10pt + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
     letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
     opacity: .8;
     margin-top: -10px;
     margin-bottom: 20px;
     line-height: 0.7em;
+    white-space:nowrap;
   }
 
 hr {
@@ -167,8 +168,8 @@ h1 {
 
 .sinulatan__image {
     vertical-align:top;
-    object-position: -10px -17px;
-    width: calc(100% + (22 - 10) * ((100vw - 300px) / (2000 - 300)));
-    max-width: 640px;
+    object-position: -20px -20px;
+    width:130%;
+    max-width: 550px;
     height: auto;
 }
